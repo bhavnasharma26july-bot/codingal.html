@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Class</title>
+</head>
+<body>
+
+<script>
+class Character {
+    constructor(name, clan, techniques, height) {
+        this.name = name;
+        this.clan = clan;
+        this.techniques = techniques;
+        this.height = height;
+    }
+
+    display() {
+        return this.name + " : " + this.clan + " : " + this.techniques + " : " + this.height;
+    }
+}
+
+let p1 = new Character(
+    "GOJO SATORU",
+    "GOJO CLAN",
+    "SIX EYES AND LIMITLESS",
+    "190 CM"
+);
+
+let p2 = new Character(
+    "YUJI ITADORI",
+    "NO CLAN",
+    "SUPERHUMAN STRENGTH AND SPEED",
+    "167 CM"
+);
+
+let p3 = new Character(
+    "TOJI FUSHIGURO",
+    "ZENIN CLAN",
+    "SUPERHUMAN STRENGTH AND SPEED",
+    "190 CM"
+);
+
+document.write(p1.display() + "<br>");
+document.write(p2.display() + "<br>");
+document.write(p3.display() + "<br>");
+</script>
+
+</body>
+</html>
